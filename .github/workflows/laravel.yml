@@ -38,14 +38,14 @@ jobs:
 #       - name: Check Laravel version
 #         run: php artisan --version      
         
-      - name: Install Firefox driver
-        run: php artisan dusk:firefox-driver
-#           '
-      - name: Install breeze
-        run: composer require laravel/breeze --dev
-      - name: Install blade
-        run: |
-          php artisan breeze:install blade
+#       - name: Install Firefox driver
+#         run: php artisan dusk:firefox-driver
+# #           '
+#       - name: Install breeze
+#         run: composer require laravel/breeze --dev
+#       - name: Install blade
+#         run: |
+#           php artisan breeze:install blade
       - name: DB Migrate
         run: php artisan migrate
       - name: Clear cache
